@@ -9,3 +9,5 @@ hashtable in C lang
 ![Kanibou Noura](https://github.com/nourakb)
 
 ![Cheikh Mohammed Nabil](https://github.com/Azrood)
+
+![hamza Amjoun](https://github.com/hamza-amjoun)
