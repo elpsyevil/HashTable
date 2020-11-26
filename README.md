@@ -8,4 +8,4 @@ hashtable in C lang
 
 ![Kanibou Noura](https://github.com/nourakb)
 
-![CHEIKH Mohammed Nabil](https://github.com/Azrood)
+![Cheikh Mohammed Nabil](https://github.com/Azrood)
