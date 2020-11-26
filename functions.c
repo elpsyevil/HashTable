@@ -67,3 +67,13 @@ void delete(DataItem* item) {
    
    return NULL;        
 }
+
+int hashFct(char* nom){
+   int h = 0;
+
+   for (int i=0;i<strlen(nom);i++){
+      h+=(int)nom[i];
+   }
+
+   return h%SIZE;
+}
