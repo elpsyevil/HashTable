@@ -4,6 +4,26 @@
 #include <stdbool.h>
 #include "functions.h"
 
+void insert(char* name,int age) {
+
+   DataItem *item = (DataItem*) malloc(sizeof(DataItem));
+   item->name = name;  
+   item->age= age;
+
+   //get the hash 
+   int hashIndex = hashFct(name);
+
+   //move in array until an empty !!!!!! hadi machi daroria or deleted cell
+   while(hashArray[hashIndex] != NULL) {
+      //go to next cell
+      ++hashIndex;
+      
+      //wrap around the table
+      hashIndex %= SIZE;
+   }
+   
+   hashArray[hashIndex] = item;
+}
 
 void delete(DataItem* item) {
    int name= item->name;
