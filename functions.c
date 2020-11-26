@@ -77,3 +77,21 @@ int hashFct(char* nom){
 
    return h%SIZE;
 }
+
+struct DataItem *search(int key) {
+
+  int hashIndex = hashCode(key);
+
+   while(hashArray[hashIndex] != NULL) {
+
+      if(hashArray[hashIndex]->key == key)
+         return hashArray[hashIndex];
+
+      ++hashIndex;
+
+      hashIndex %= SIZE;
+   }
+
+   return NULL;
+}
+
