@@ -25,6 +25,22 @@ void insert(char* name,int age) {
    hashArray[hashIndex] = item;
 }
 
+
+void display() {
+   int i = 0;
+	
+   for(i = 0; i<SIZE; i++) {
+	
+      if(hashArray[i] != NULL)
+         printf(" (%s,%d)",hashArray[i]->name,hashArray[i]->age);
+      else
+         printf(" ~~ ");
+   }
+	
+   printf("\n");
+}
+
+
 void delete(DataItem* item) {
    int name= item->name;
 
