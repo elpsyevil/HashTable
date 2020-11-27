@@ -80,7 +80,7 @@ int hashFct(char* nom){
 
 struct DataItem *search(int key) {
 
-  int hashIndex = hashCode(key);
+  int hashIndex = hashFct(key);
 
    while(hashArray[hashIndex] != NULL) {
 
